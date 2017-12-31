@@ -45,7 +45,7 @@ def word2vec(batch_gen):
         total_loss = 0.0  # we use this to calculate the average loss in the last SKIP_STEP steps
         writer = tf.summary.FileWriter('./graphs/no_frills/', sess.graph)
         for index in range(NUM_TRAIN_STEPS):
-            batch = batch_gen.next()
+            batch = next(batch_gen)
             loss_batch = sess.run([loss,optimizer], feed_dict = {center_index: batch[0], target_index: batch[1]})
             total_loss += loss_batch
             if (index + 1) % SKIP_STEP == 0:

@@ -38,8 +38,8 @@
       <file leaf-file-name="wordtovectorv1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wordtovectorv1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="508">
+              <caret line="47" column="34" lean-forward="false" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -50,8 +50,8 @@
       <file leaf-file-name="premadew2v.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/premadew2v.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="784">
-              <caret line="77" column="32" lean-forward="false" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
+            <state relative-caret-position="444">
+              <caret line="71" column="12" lean-forward="false" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="46" />
               <folding>
                 <element signature="e#193#231#0" expanded="true" />
               </folding>
@@ -281,8 +281,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/premadew2v.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="77" column="32" lean-forward="false" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
+        <state relative-caret-position="444">
+          <caret line="71" column="12" lean-forward="false" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="46" />
           <folding>
             <element signature="e#193#231#0" expanded="true" />
           </folding>
@@ -291,8 +291,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wordtovectorv1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="508">
+          <caret line="47" column="34" lean-forward="false" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
