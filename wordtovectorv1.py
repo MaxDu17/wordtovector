@@ -32,7 +32,7 @@ def word2vec(batch_gen):
 
         embed = tf.nn.embedding_lookup(embed_matrix, center_index, name='embed')#embed is the word vector
 
-    with tf.name_scope('loss')
+    with tf.name_scope('loss'):
         nce_weight = tf.Variable(tf.truncated_normal([VOCAB_SIZE, EMBED_SIZE],stddev=1.0/EMBED_SIZE**0.5),name="nce_weight")
         nce_bias = tf.Variable(tf.zeros([VOCAB_SIZE]),name="nce_bias")
         loss = tf.reduce_mean(tf.nn.nce_loss(weights=nce_weight,biases=nce_bias,labels=target_index,inputs=embed,num_sampled=NUM_SAMPLED, num_classes=VOCAB_SIZE),name="nce_loss_function")
