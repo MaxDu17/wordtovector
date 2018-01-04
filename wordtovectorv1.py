@@ -4,7 +4,7 @@ from __future__ import print_function
 
 import os
 
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+#os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 import numpy as np
 import tensorflow as tf
@@ -23,21 +23,21 @@ SKIP_STEP = 2000  # how many steps to skip before reporting the loss
 
 
 def word2vec(batch_gen):
+    with tf.name_scope('data'):
+        center_index = tf.placeholder(tf.int32, shape=[BATCH_SIZE], name = "center_index")
+        target_index = tf.placeholder(tf.int32, shape = [BATCH_SIZE,1],name="target_index")
 
-    center_index = tf.placeholder(tf.int32, shape=[BATCH_SIZE], name = "center_index")
-    target_index = tf.placeholder(tf.int32, shape = [BATCH_SIZE,1],name="target_index")
+    with tf.name_scope('embed'):
+        embed_matrix = tf.Variable(tf.random_uniform([VOCAB_SIZE, EMBED_SIZE],-1.0,1.0),name = "embedded_matrix")
 
-    embed_matrix = tf.Variable(tf.random_uniform([VOCAB_SIZE, EMBED_SIZE],-1.0,1.0),name = "embedded_matrix")
+        embed = tf.nn.embedding_lookup(embed_matrix, center_index, name='embed')#embed is the word vector
 
-
-    embed = tf.nn.embedding_lookup(embed_matrix, center_index, name='embed')#embed is the word vector
-
-
-    nce_weight = tf.Variable(tf.truncated_normal([VOCAB_SIZE, EMBED_SIZE],stddev=1.0/EMBED_SIZE**0.5),name="nce_weight")
-    nce_bias = tf.Variable(tf.zeros([VOCAB_SIZE]),name="nce_bias")
-    loss = tf.reduce_mean(tf.nn.nce_loss(weights=nce_weight,biases=nce_bias,labels=target_index,inputs=embed,num_sampled=NUM_SAMPLED, num_classes=VOCAB_SIZE),name="nce_loss_function")
-    #it feeds in the word vector, and compares it to the target index, which is what the word should be, which is an index.
-    optimizer = tf.train.GradientDescentOptimizer(LEARNING_RATE).minimize(loss)
+    with tf.name_scope('loss')
+        nce_weight = tf.Variable(tf.truncated_normal([VOCAB_SIZE, EMBED_SIZE],stddev=1.0/EMBED_SIZE**0.5),name="nce_weight")
+        nce_bias = tf.Variable(tf.zeros([VOCAB_SIZE]),name="nce_bias")
+        loss = tf.reduce_mean(tf.nn.nce_loss(weights=nce_weight,biases=nce_bias,labels=target_index,inputs=embed,num_sampled=NUM_SAMPLED, num_classes=VOCAB_SIZE),name="nce_loss_function")
+        #it feeds in the word vector, and compares it to the target index, which is what the word should be, which is an index.
+        optimizer = tf.train.GradientDescentOptimizer(LEARNING_RATE).minimize(loss)
 
 
     with tf.Session() as sess:
