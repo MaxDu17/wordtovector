@@ -33,14 +33,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wordtovectorv1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="wordtovectorv1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordtovectorv1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="39" column="96" lean-forward="false" selection-start-line="39" selection-start-column="96" selection-end-line="39" selection-end-column="96" />
+            <state relative-caret-position="170">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wordtovectorlib.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wordtovectorlib.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wordtovectorrun.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wordtovectorrun.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,6 +90,8 @@
         <option value="$PROJECT_DIR$/../Speech/utils.py" />
         <option value="$PROJECT_DIR$/premadew2v.py" />
         <option value="$PROJECT_DIR$/wordtovectorv1.py" />
+        <option value="$PROJECT_DIR$/wordtovectorlib.py" />
+        <option value="$PROJECT_DIR$/wordtovectorrun.py" />
       </list>
     </option>
   </component>
@@ -343,11 +365,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wordtovectorv1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="39" column="96" lean-forward="false" selection-start-line="39" selection-start-column="96" selection-end-line="39" selection-end-column="96" />
+        <state relative-caret-position="170">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordtovectorrun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordtovectorlib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
