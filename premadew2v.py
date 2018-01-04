@@ -67,7 +67,7 @@ def word2vec(batch_gen):
         sess.run(tf.global_variables_initializer())
 
         total_loss = 0.0  # we use this to calculate late average loss in the last SKIP_STEP steps
-        writer = tf.summary.FileWriter('./graphs/no_frills/', sess.graph)
+        writer = tf.summary.FileWriter('./graphs/premade/', sess.graph)
         for index in range(NUM_TRAIN_STEPS):
             centers, targets = next(batch_gen)
             loss_batch, _ = sess.run([loss, optimizer],
