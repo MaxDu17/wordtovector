@@ -37,7 +37,7 @@ def word2vec(batch_gen):
         nce_bias = tf.Variable(tf.zeros([VOCAB_SIZE]),name="nce_bias")
         loss = tf.reduce_mean(tf.nn.nce_loss(weights=nce_weight,biases=nce_bias,labels=target_index,inputs=embed,num_sampled=NUM_SAMPLED, num_classes=VOCAB_SIZE),name="nce_loss_function")
         #it feeds in the word vector, and compares it to the target index, which is what the word should be, which is an index.
-        optimizer = tf.train.GradientDescentOptimizer(LEARNING_RATE).minimize(loss)
+    optimizer = tf.train.GradientDescentOptimizer(LEARNING_RATE).minimize(loss)#this is separate
 
 
     with tf.Session() as sess:
