@@ -9,7 +9,7 @@ import os
 import numpy as np
 import tensorflow as tf
 from tensorflow.contrib.tensorboard.plugins import projector
-
+from __future__ import absolute_import
 from process_data import process_data
 
 VOCAB_SIZE = 50000
