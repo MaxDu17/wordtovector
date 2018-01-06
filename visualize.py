@@ -129,7 +129,7 @@ def train_model(model, batch_gen, num_train_steps, weights_fld):
                 saver.save(sess, 'checkpoints/skip-gram', index)
 
         ####################
-        # code to visualize the embeddings. uncomment the below to visualize embeddings
+
         # run "'tensorboard --logdir='processed'" to see the embeddings
         final_embed_matrix = sess.run(model.embed_matrix)
 
