@@ -54,7 +54,7 @@ def word2vec(batch_gen):
         for index in range(NUM_TRAIN_STEPS):
             batch = next(batch_gen)
             loss_batch, _ = sess.run([loss,optimizer], feed_dict = {center_index: batch[0], target_index: batch[1]})# the "_" just acts like a dump ground for "optimizer"
-            summary = sess.run(summary_op, feed_dict = None)
+            summary = sess.run(summary_op)
             writer.add_summary(summary,global_step = global_step)
             total_loss = total_loss + loss_batch
             if (index + 1) % SKIP_STEP == 0:

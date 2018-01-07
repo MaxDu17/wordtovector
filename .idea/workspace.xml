@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c55b30a3-aa98-450d-832c-4d879a80a6ff" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/wordtovectorwithcheckpoints.py" afterPath="$PROJECT_DIR$/wordtovectorwithcheckpoints.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +16,8 @@
       <file leaf-file-name="wordtovectorwithcheckpoints.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wordtovectorwithcheckpoints.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="48" column="87" lean-forward="false" selection-start-line="48" selection-start-column="87" selection-end-line="48" selection-end-column="87" />
+            <state relative-caret-position="340">
+              <caret line="43" column="39" lean-forward="true" selection-start-line="42" selection-start-column="48" selection-end-line="43" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -474,8 +473,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wordtovectorwithcheckpoints.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="48" column="87" lean-forward="false" selection-start-line="48" selection-start-column="87" selection-end-line="48" selection-end-column="87" />
+        <state relative-caret-position="340">
+          <caret line="43" column="39" lean-forward="true" selection-start-line="42" selection-start-column="48" selection-end-line="43" selection-end-column="39" />
           <folding />
         </state>
       </provider>
