@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c55b30a3-aa98-450d-832c-4d879a80a6ff" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/wordtovectorv1.py" afterPath="$PROJECT_DIR$/wordtovectorv1.py" />
       <change beforePath="$PROJECT_DIR$/wordtovectorwithcheckpoints.py" afterPath="$PROJECT_DIR$/wordtovectorwithcheckpoints.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="wordtovectorv1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="wordtovectorv1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordtovectorv1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+            <state relative-caret-position="344">
+              <caret line="42" column="51" lean-forward="true" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -26,12 +25,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wordtovectorwithcheckpoints.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="wordtovectorwithcheckpoints.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wordtovectorwithcheckpoints.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="60" lean-forward="false" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
-              <folding />
+            <state relative-caret-position="378">
+              <caret line="47" column="59" lean-forward="true" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="59" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,8 +67,8 @@
         <option value="$PROJECT_DIR$/wordtovectorlib.py" />
         <option value="$PROJECT_DIR$/wordtovectorrun.py" />
         <option value="$PROJECT_DIR$/visualize.py" />
-        <option value="$PROJECT_DIR$/wordtovectorwithcheckpoints.py" />
         <option value="$PROJECT_DIR$/wordtovectorv1.py" />
+        <option value="$PROJECT_DIR$/wordtovectorwithcheckpoints.py" />
       </list>
     </option>
   </component>
@@ -474,18 +475,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordtovectorwithcheckpoints.py">
+    <entry file="file://$PROJECT_DIR$/wordtovectorv1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="60" lean-forward="false" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
-          <folding />
+        <state relative-caret-position="344">
+          <caret line="42" column="51" lean-forward="true" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordtovectorv1.py">
+    <entry file="file://$PROJECT_DIR$/wordtovectorwithcheckpoints.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        <state relative-caret-position="378">
+          <caret line="47" column="59" lean-forward="true" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="59" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>

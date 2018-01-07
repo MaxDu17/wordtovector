@@ -43,6 +43,9 @@ def word2vec(batch_gen):
 
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
+        ckpt = tf.train.get_checkpoint_state(os.path.dirname('my_checkpoints/checkpoint'))
+        if ckpt and ckpt.model_checkpoint_path:
+            saver.restore(sess, ckpt.model_checkpoint_path)
         total_loss = 0.0  # we use this to calculate the average loss in the last SKIP_STEP steps
         writer = tf.summary.FileWriter('./graphs/withcheckpoints/', sess.graph)
         for index in range(NUM_TRAIN_STEPS):
