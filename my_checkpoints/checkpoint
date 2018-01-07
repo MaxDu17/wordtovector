@@ -1,0 +1,6 @@
+model_checkpoint_path: "wordtovector-19999"
+all_model_checkpoint_paths: "wordtovector-11999"
+all_model_checkpoint_paths: "wordtovector-13999"
+all_model_checkpoint_paths: "wordtovector-15999"
+all_model_checkpoint_paths: "wordtovector-17999"
+all_model_checkpoint_paths: "wordtovector-19999"
