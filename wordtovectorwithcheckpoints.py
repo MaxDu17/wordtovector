@@ -21,6 +21,7 @@ NUM_TRAIN_STEPS = 20000
 SKIP_STEP = 2000  # how many steps to skip before reporting the loss
 
 
+
 def word2vec(batch_gen):
     with tf.name_scope('data'):
         center_index = tf.placeholder(tf.int32, shape=[BATCH_SIZE], name = "center_index")
@@ -38,7 +39,9 @@ def word2vec(batch_gen):
         #it feeds in the word vector, and compares it to the target index, which is what the word should be, which is an index.
     global_step = tf.Variable(0, dtype=tf.int32, trainable=False, name='global_step')
     optimizer = tf.train.GradientDescentOptimizer(LEARNING_RATE).minimize(loss, global_step = global_step)#this is separate
-
+    tf.summary.scalar("loss", loss)
+    tf.summary.histogram("histogram loss", loss)
+    summary_op = tf.summary.merge_all()
     saver = tf.train.Saver()
 
     with tf.Session() as sess:
@@ -51,10 +54,12 @@ def word2vec(batch_gen):
         for index in range(NUM_TRAIN_STEPS):
             batch = next(batch_gen)
             loss_batch, _ = sess.run([loss,optimizer], feed_dict = {center_index: batch[0], target_index: batch[1]})# the "_" just acts like a dump ground for "optimizer"
+            summary = sess.run(summary_op, feed_dict = None)
+            writer.add_summary(summary,global_step = global_step)
             total_loss = total_loss + loss_batch
             if (index + 1) % SKIP_STEP == 0:
                 print('Average loss at step {}: {:5.1f}'.format(index, total_loss / SKIP_STEP))
-                saver.save(sess, "my_checkpoints/wordtovector", global_step = index)
+                saver.save(sess, "my_checkpoints/wordtovector", global_step = global_step)
                 total_loss = 0.0
         writer.close()
 
